@@ -1,0 +1,42 @@
+body {
+display: grid;
+grid-template-columns: 50% 25% 25%;
+grid-template-rows: auto;
+grid-template-areas: "header nav nav "
+ "main main aside "
+
+ "footer footer footer";
+}
+
+header {
+background-color: blue; 
+color: white; 
+
+grid-area:header;
+}
+nav {
+background-color: yellow;
+display:inline;
+grid-area:nav;
+}
+li {list-style:none;
+display:inline;
+padding:60px;
+
+}
+
+main {
+background-color: darkblue;
+color: white;
+grid-area:main;
+
+}
+aside {
+background-color: lightgreen;
+grid-area:aside;
+}
+footer {
+background-color: darkgreen;
+color: white;
+grid-area:footer;
+}
