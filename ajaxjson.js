@@ -23,7 +23,7 @@ let data=JSON.parse(xhr.responseText);
 let txt="";
 
 for(let i=0;i<data.counties.length;i++){
- txt +="<tr><td>" + data.counties[i].name + "   "+ data.counties[i].wgs84Lat + "   "+ data.counties[i].wgs84Long+ </td></tr>";
+ txt +="<tr><td>" + data.counties[i].name + "   "+ data.counties[i].wgs84Lat + "   "+ data.counties[i].wgs84Long+ "</td></tr>";
                                        }
 document.getElementById("countylist").innerHTML=txt;
 }else{
